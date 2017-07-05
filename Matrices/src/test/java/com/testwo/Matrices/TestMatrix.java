@@ -55,7 +55,7 @@ public class TestMatrix {
 
 	@Test
 	public void testZeroMatrix() {
-		actualMat1.zeroMatrix();
+		//actualMat1.zeroMatrix();
 		//should change all the elements in the Matrix to zero
 		for (int i = 0; i < actualMat1.theMatrixArray.length; i++) {
 			Assert.assertEquals(0.0, actualMat1.theMatrixArray[i], 0.0001);
