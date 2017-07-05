@@ -1,7 +1,7 @@
 package com.testwo.Matrices;
 
 import java.util.Random;
-/* represents a matrix, can do matrix multiplication and print out the matrix
+/* represents a matrix, can do matrix multiplication (2 different implementations) and print out the matrix
  * Initialised with random doubles, but can be zeroed
  */
 
@@ -10,7 +10,7 @@ public class Matrix {
 	private int numRows;
 	private int numCols;
 
-	private double[] theMatrixArray; // stored in row major
+	double[] theMatrixArray; // stored in row major
 
 	// creating the random number generator
 	// declared here so can have a seed so reproducible, without making all
@@ -22,7 +22,7 @@ public class Matrix {
 		numCols = colNum;
 		numRows = rowNum;
 
-		// initialising array with random numbers
+		// initialising array with random numbers, doubles between 0.0 and 1.0
 		theMatrixArray = new double[numCols * numRows];
 		// putting numbers in the array
 		for (int i = 0; i < theMatrixArray.length; i++) {
@@ -36,7 +36,7 @@ public class Matrix {
 			System.out.println();
 			// every row starts on a new line
 			for (int j = 0; j < numCols; j++) {
-				System.out.printf("%.2f  ", theMatrixArray[numCols * i + j]);
+				System.out.printf("%.6f  ", theMatrixArray[numCols * i + j]);
 
 			}
 		}
