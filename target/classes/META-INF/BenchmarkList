@@ -1,2 +1,0 @@
-JMH S 31 com.testwo.Matrices.MyBenchmark S 61 com.testwo.Matrices.generated.MyBenchmark_testMultIJK_jmhTest S 11 testMultIJK S 10 Throughput E A 1 1 1 E I 1 5 T 6 100 ms E I 2 20 T 6 100 ms E E E E E E E M 1 6 noRows 1 1 2 E E E 
-JMH S 31 com.testwo.Matrices.MyBenchmark S 61 com.testwo.Matrices.generated.MyBenchmark_testMultIKJ_jmhTest S 11 testMultIKJ S 10 Throughput E A 1 1 1 E I 1 5 T 6 100 ms E I 2 20 T 6 100 ms E E E E E E E M 1 6 noRows 1 1 2 E E E 
