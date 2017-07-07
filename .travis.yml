@@ -3,8 +3,8 @@ language: java
 sudo: false
 script: 
 - mvn clean install
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testtwo.Matrices.MyBenchmark.testMultIJK -p noRows=100,300,500,700,900 -rf csv -rff testIJK
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testtwo.Matrices.MyBenchmark.testMultIKJ -p noRows=100,300,500,700,900 -rf csv -rff testIKJ
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -p noRows=100,300,500,700,900 -rf csv -rff testIJK
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -p noRows=100,300,500,700,900 -rf csv -rff testIKJ
 notifications:
   email: false
 after_success: 
