@@ -1,6 +1,6 @@
 
 language: java
-sudo: false
+sudo: required
 script: 
 - mvn clean install
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -p noRows=10 -rf csv -rff testIJK
@@ -8,7 +8,7 @@ script:
 notifications:
   email: false
 after_success: 
-- apt-get install python2.7
+- sudo apt-get install python2.7
 - chmod +x plotScript.py
 - ./plotScript.py
 - chmod +x update-gh.sh 
