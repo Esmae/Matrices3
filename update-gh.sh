@@ -14,7 +14,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrices" ]; then
   cd testMatrix
  
 
-  git add -f
+  git add -f .
 
   git commit -m "Travis build pushed to testMatrices"
 
