@@ -1,5 +1,5 @@
-if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrices" ]; then
-  echo -e "Starting to update testMatrices\n"
+if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
+  echo -e "Starting to update testMatrix\n"
 
   cp -R testIJK $HOME
   cp -R testIKJ $HOME
@@ -16,9 +16,9 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrices" ]; then
 
   git add -f .
 
-  git commit -m "Travis build pushed to testMatrices"
+  git commit -m "Travis build pushed to testMatrix"
 
-  git push -fq https://${TOKEN}@github.com/Esmae/Matrices.git testMatrices > /dev/null
+  git push -fq https://${TOKEN}@github.com/Esmae/Matrices.git testMatrix > /dev/null
 
   echo -e "Success? \n"
 fi
