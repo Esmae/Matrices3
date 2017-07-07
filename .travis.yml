@@ -10,6 +10,6 @@ notifications:
 after_success: 
 - sudo apt-get install python2.7
 - chmod +x plotScript.py
-- ./plotScript.py
+- python plotScript.py
 - chmod +x update-gh.sh 
 - ./update-gh.sh
