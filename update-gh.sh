@@ -12,7 +12,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
 
   cp -Rf $HOME/testIJK testMatrix
   cp -Rf $HOME/testIKJ testMatrix
-  cp -Rf $HOME/CompPlot* testMatrix
+  cp -Rf $HOME/CompPlot* testMatrix/figures
   cd testMatrix
  
 
