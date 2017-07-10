@@ -10,6 +10,9 @@ notifications:
 after_success: 
 - sudo apt-get install python2.7
 - sudo aptitude install python-numpy
+- sudo aptitude install python-matplotlib
+- sudo aptitude install python-csv
+- sudo aptitude install python-time
 - chmod +x plotScript.py
 - python plotScript.py
 - chmod +x update-gh.sh 
