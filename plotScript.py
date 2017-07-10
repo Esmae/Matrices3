@@ -67,7 +67,7 @@ mplot.ylabel('ln(Score/ op/s)')
 
 #creating the filename with the date
 filename = 'CompPlot'
-theDate = time.strftime("%d-%m-%Y")
+theDate = time.strftime("%d-%m-%Y_-%H-%M")
 filename += theDate
 filename += '.png'
 
