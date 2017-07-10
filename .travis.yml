@@ -8,11 +8,11 @@ script:
 notifications:
   email: false
 after_success: 
-- sudo apt-get install python2.7
-- sudo aptitude install python-numpy
-- sudo aptitude install python-matplotlib
-- sudo aptitude install python-csv
-- sudo aptitude install python-time
+- sudo apt-get install -y python2.7
+- sudo apt-get install -y python-numpy
+- sudo apt-get install -y python-matplotlib
+- sudo apt-get install -y python-csv
+- sudo apt-get install -y python-time
 - chmod +x plotScript.py
 - python plotScript.py
 - chmod +x update-gh.sh 
