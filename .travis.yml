@@ -7,7 +7,8 @@ script:
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -p noRows=10 -rf csv -rff testIKJ
 notifications:
   email: false
-after_success: 
+after_success:
+- sudp apt-get -qq update
 - sudo apt-get install -y python2.7
 - sudo apt-get install -y python-numpy
 - sudo apt-get install -y python-matplotlib
