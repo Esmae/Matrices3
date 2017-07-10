@@ -6,7 +6,7 @@ the size of the array for matrix multiplication
 """
 
 import numpy as np
-import matplotlib.pyplot as mplot
+import matplotlib as mpl
 import csv
 import time
 
@@ -36,7 +36,7 @@ with open('testIJK') as csvfile:
     arrLnScoreIJK = np.log(arrScoreIJK)
     arrLnSizeIJK = np.log(arrSizeIJK)
     #plotting the graph
-    mplot.plot(arrLnSizeIJK,arrLnScoreIJK,'k-',label='IJK')
+    mpl.pyplot.plot(arrLnSizeIJK,arrLnScoreIJK,'k-',label='IJK')
     
 with open('testIKJ') as csvfile:
     #reading in the testIKJ csv file
@@ -57,12 +57,12 @@ with open('testIKJ') as csvfile:
     arrLnScoreIKJ = np.log(arrScoreIKJ)
     arrLnSizeIKJ = np.log(arrSizeIKJ)
     #plotting the graph
-    mplot.plot(arrLnSizeIKJ,arrLnScoreIKJ,'r-',label='IKJ')
+    mpl.pyplot.plot(arrLnSizeIKJ,arrLnScoreIKJ,'r-',label='IKJ')
     
 #labeling the graph
-mplot.legend()
-mplot.xlabel('ln(Size)')
-mplot.ylabel('ln(Score/ op/s)')
+mpl.pyplot.legend()
+mpl.pyplot.xlabel('ln(Size)')
+mpl.pyplot.ylabel('ln(Score/ op/s)')
 
 #creating the filename with the date
 filename = 'CompPlot'
@@ -71,4 +71,4 @@ filename += theDate
 filename += '.png'
 
 #saving the plot as a png file
-mplot.savefig(filename)
+mpl.pyplot.savefig(filename)
