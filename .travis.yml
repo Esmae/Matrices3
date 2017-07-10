@@ -9,6 +9,7 @@ notifications:
   email: false
 after_success: 
 - sudo apt-get install python2.7
+- sudo aptitude install python-numpy
 - chmod +x plotScript.py
 - python plotScript.py
 - chmod +x update-gh.sh 
