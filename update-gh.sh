@@ -10,10 +10,9 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
   git config --global user.name "Travis"
   git clone --quiet --branch=testMatrix https://${TOKEN}@github.com/Esmae/Matrices.git  testMatrix> /dev/null
 
-  today=$(date +%Y-%m-%d)
+  today=$(date +%Y-%m-%d_%H-%M)
   mv testIJK testIJK."$today"
   
-  today=$(date +%Y-%m-%d)
   mv testIKJ testIKJ."$today"
   
 
