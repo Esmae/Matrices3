@@ -3,6 +3,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
 
   cp -R testIJK $HOME
   cp -R testIKJ $HOME
+  cp -R CompPlot* $HOME
 
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
@@ -11,6 +12,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
 
   cp -Rf $HOME/testIJK testMatrix
   cp -Rf $HOME/testIKJ testMatrix
+  cp -Rf $HOME/CompPlot* testMatrix
   cd testMatrix
  
 
