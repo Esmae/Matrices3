@@ -4,14 +4,14 @@ sudo: required
 #building, running the JUnit tests and the benchmarks
 script: 
 - mvn clean install
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -bm ss -i 10 -p noRows=100,200,300,400,500,600,700,800,900 -rf csv -rff testIJK
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -bm ss -i 10 -p noRows=100,200,300,400,500,600,700,800,900 -rf csv -rff testIKJ
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -i 10 -p noRows=100 -rf csv -rff testIJK
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=100 -rf csv -rff testIKJ
 #don't want an email every time I commit
 notifications:
   email: false
 after_success:
 #installing the required packages for the python script to run
-- sudp apt-get -qq update
+- sudo apt-get -qq update
 - sudo apt-get install -y python2.7
 - sudo apt-get install -y python-numpy
 - sudo apt-get install -y python-matplotlib
