@@ -52,7 +52,7 @@ if listLen <= 10:
     mplot.savefig("TimePLotTen.png")
 else:
     listTenScore = []
-    plt.clf()
+    mplot.clf()
     for i in range(0,listLen):
         listTenScore.append(listScore[listLen-10+i])
     arrTenScore = np.asarray(listTenScore)
