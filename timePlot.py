@@ -43,4 +43,4 @@ mplot.xlabel('Relative commit number')
 mplot.ylabel('Throughput Score/ op/s')
 
 #saving the plot as a png file
-mplot.savefig(TimePlot.png)
+mplot.savefig("TimePlot.png")
