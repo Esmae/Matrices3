@@ -1,8 +1,8 @@
 if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   echo -e "Starting to update Matrix 3 master\n"
 
-  cp -R testIJK $HOME
-  cp -R testIKJ $HOME
+  cp -R test* $HOME
+  cp -R time* $HOME
   cp -R CompPlot* $HOME
 
   cd $HOME
