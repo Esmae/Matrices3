@@ -44,12 +44,12 @@ mplot.ylabel('Throughput Score/ op/s')
 mplot.title('Score over time')
 
 #saving the plot as a png file
-mplot.savefig("TimePlot.png")
+mplot.savefig("TimePlot50.png")
 
 #plotting a figure with only the most recent 10 results in
 listLen = len(listScore)
 if listLen <= 10:
-    mplot.savefig("TimePLotTen.png")
+    mplot.savefig("TimePLotTen50.png")
 else:
     listTenScore = []
     mplot.clf()
@@ -63,6 +63,6 @@ else:
     mplot.ylabel('Throughput Score/ op/s')
     mplot.title('Score over last 10')
     #saving the plot as a png file
-    mplot.savefig("TimePlotTen.png")
+    mplot.savefig("TimePlotTen50.png")
         
     
