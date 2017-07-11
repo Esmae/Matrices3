@@ -1,7 +1,7 @@
 f = open("master/dataWithTime50","a")
 
 
-with open("master/time50") as g:
+with open("time50") as g:
     i = int(1)
     for line in g:
         if i!=1:
