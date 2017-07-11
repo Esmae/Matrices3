@@ -26,12 +26,12 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   
   cd master
  
-
+  git add 
   git add -f .
 
   git commit -m "Travis build pushed to Matrix3 master"
 
-  git push -fq https://${TOKEN}@github.com/Esmae/Matrices.git master > /dev/null
+  git push -fq https://${TOKEN}@github.com/Esmae/Matrices3.git master > /dev/null
 
   echo -e "Success? \n"
 fi
