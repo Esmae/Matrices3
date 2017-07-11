@@ -20,6 +20,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   cp -Rf $HOME/CompPlot* master/figures
   cd testMatrix
   
+  #need to change the python script if change the name of the folder the clone is going into (currently it's called master)
   chmod +x timePlot.py
   python timePlot.py
  
