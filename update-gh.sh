@@ -24,7 +24,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   chmod +x timePlot.py
   python timePlot.py
   
-  cd testMatrix
+  cd master
  
 
   git add -f .
