@@ -1,5 +1,5 @@
-if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
-  echo -e "Starting to update testMatrix\n"
+if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
+  echo -e "Starting to update Matrix 3 master\n"
 
   cp -R testIJK $HOME
   cp -R testIKJ $HOME
@@ -8,7 +8,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
-  git clone --quiet --branch=testMatrix https://${TOKEN}@github.com/Esmae/Matrices.git  testMatrix> /dev/null
+  git clone --quiet --branch=master https://${TOKEN}@github.com/Esmae/Matrices3.git  master> /dev/null
 
   today=$(date +%Y-%m-%d_%H-%M)
   mv testIJK testIJK."$today"
@@ -16,9 +16,12 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to testMatrix" ]; then
   mv testIKJ testIKJ."$today"
   
 
-  cp -Rf $HOME/test* testMatrix/data
-  cp -Rf $HOME/CompPlot* testMatrix/figures
+  cp -Rf $HOME/test* master/data
+  cp -Rf $HOME/CompPlot* master/figures
   cd testMatrix
+  
+  chmod +x timePlot.py
+  python timePlot.py
  
 
   git add -f .
