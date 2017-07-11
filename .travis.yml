@@ -6,9 +6,9 @@ script:
 - mvn clean install
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -i 10 -p noRows=1,2,3,4,5,6,7,8,9 -rf csv -rff testIJK
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=1,2,3,4,5,6,7,8,9 -rf csv -rff testIKJ
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 20 -p noRows=50 -rf csv -rff test50
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 20 -p noRows=100 -rf csv -rff test100
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 20 -p noRows=500 -rf csv -rff test500
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 20 -p noRows=50 -rf csv -rff time50
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 20 -p noRows=100 -rf csv -rff time100
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 20 -p noRows=500 -rf csv -rff time500
 #don't want an email every time I commit
 notifications:
   email: false
