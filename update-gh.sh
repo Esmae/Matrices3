@@ -4,6 +4,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   cp -R test* $HOME
   cp -R time* $HOME
   cp -R CompPlot* $HOME
+  cp -R TimePlot.png $HOME
 
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
@@ -18,6 +19,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
 
   cp -Rf $HOME/test* master/data
   cp -Rf $HOME/CompPlot* master/figures
+  cp -Rf $HOME/TimePlot.png master/figures
 
   
   #need to change the python script if change the name of the folder the clone is going into (currently it's called master)
