@@ -45,3 +45,24 @@ mplot.title('Score over time')
 
 #saving the plot as a png file
 mplot.savefig("TimePlot.png")
+
+#plotting a figure with only the most recent 10 results in
+listLen = len(listScore)
+if listLen <= 10:
+    mplot.savefig("TimePLotTen.png")
+else:
+    listTenScore = []
+    plt.clf()
+    for i in range(0,listLen):
+        listTenScore.append(listScore[listLen-10+i])
+    arrTenScore = np.asarray(listTenScore)
+    arrTenCommit = np.asarray([1,2,3,4,5,6,7,8,9,10])
+    mplot.plot(arrTenCommit,arrTenScore,'k')
+    #labeling the graph
+    mplot.xlabel('Relative commit number')
+    mplot.ylabel('Throughput Score/ op/s')
+    mplot.title('Score over last 10')
+    #saving the plot as a png file
+    mplot.savefig("TimePlotTen.png")
+        
+    
