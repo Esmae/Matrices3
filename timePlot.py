@@ -53,7 +53,7 @@ if listLen <= 10:
 else:
     listTenScore = []
     mplot.clf()
-    for i in range(0,listLen):
+    for i in range(0,10):
         listTenScore.append(listScore[listLen-10+i])
     arrTenScore = np.asarray(listTenScore)
     arrTenCommit = np.asarray([1,2,3,4,5,6,7,8,9,10])
