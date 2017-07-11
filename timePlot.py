@@ -39,7 +39,7 @@ arrScore = arrScore.astype(np.float)
 
 mplot.plot(arrCommit,arrScore,'k')
 #labeling the graph
-mplot.xlabel('Relative commit number')
+mplot.xlabel('Relative commit number (highest is most recent)')
 mplot.ylabel('Throughput Score/ op/s')
 mplot.title('Score over time')
 
@@ -59,7 +59,7 @@ else:
     arrTenCommit = np.asarray([1,2,3,4,5,6,7,8,9,10])
     mplot.plot(arrTenCommit,arrTenScore,'k')
     #labeling the graph
-    mplot.xlabel('Relative commit number')
+    mplot.xlabel('Relative commit number (highest is most recent)')
     mplot.ylabel('Throughput Score/ op/s')
     mplot.title('Score over last 10')
     #saving the plot as a png file
