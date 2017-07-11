@@ -1,3 +1,4 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: noRows"
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,820.391468,14.815358,"ops/s",100
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,830.414052,8.180241,"ops/s",100
+"com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,830.743924,10.516269,"ops/s",100
