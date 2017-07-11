@@ -41,6 +41,7 @@ mplot.plot(arrCommit,arrScore,'k')
 #labeling the graph
 mplot.xlabel('Relative commit number')
 mplot.ylabel('Throughput Score/ op/s')
+mplot.title('Score over time')
 
 #saving the plot as a png file
 mplot.savefig("TimePlot.png")
