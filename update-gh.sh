@@ -24,7 +24,9 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
 
   
   #need to change the python script if change the name of the folder the clone is going into (currently it's called master)
-  chmod +x timePlot.py
+  chmod +x timePlot50.py
+  chmod +x timePlot100.py
+  chmod +x timePlot500.py
   #calls the python script that creates the 'with time' plot
   python timePlot50.py
   python timePlot100.py
