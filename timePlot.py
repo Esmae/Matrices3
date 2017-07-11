@@ -8,12 +8,12 @@ import csv
 listScore = []
 listCommit = []
 
+#opening the file which holds the data with time
 f = open("master/dataWithTime50","a")
-
-
 with open("time50") as g:
     i = int(1)
     for line in g:
+        #skipping writing the first line as this contains the header
         if i!=1:
             f.write(line)
         i = i+1
