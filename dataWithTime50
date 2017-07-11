@@ -7,8 +7,3 @@
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5773.338274,31.241609,"ops/s",50
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5141.121990,55.176249,"ops/s",50
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5659.974900,53.640102,"ops/s",50
-"com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5662.480019,35.873027,"ops/s",50
-"com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5752.111038,37.632713,"ops/s",50
-"com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5645.538400,36.131429,"ops/s",50
-"com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5730.777519,40.599099,"ops/s",50
-"com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,5763.871870,41.342951,"ops/s",50
