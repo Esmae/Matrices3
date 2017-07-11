@@ -29,9 +29,13 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   python timePlot.py
   cp -R TimePlot.png $HOME
   cp -R TimePlotTen.png $HOME
+  cp -R TimePlotHund.png $HOME
+  cp -R TimePlotFivHund.png $HOME
   #putting the new 'with time' plot in the repo (possibly overwritting the latest one)
   cp -Rf $HOME/TimePlot.png master/figures
   cp -Rf $HOME/TimePlotTen.png master/figures
+  cp -Rf $HOME/TimePlotHund.png master/figures
+  cp -Rf $HOME/TimePlotFivHund.png master/figures
   
   cd master
  #adding the new files and changing files so they are ready to commit 
