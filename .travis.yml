@@ -5,7 +5,7 @@ sudo: required
 script: 
 - mvn clean install
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -i 10 -p noRows=50,55,60,65,70,75,80,85,90,95,100 -rf csv -rff testIJK
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=550,55,60,65,70,75,80,85,90,95,100 -rf csv -rff testIKJ
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=50,55,60,65,70,75,80,85,90,95,100 -rf csv -rff testIKJ
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=50 -rf csv -rff time50
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=100 -rf csv -rff time100
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=500 -rf csv -rff time500
