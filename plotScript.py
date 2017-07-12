@@ -21,12 +21,10 @@ listSizeIKJ = []
 with open('master/normData/testIJKNorm') as csvfile:
     #reading in the testIJK csv file
     reader = csv.DictReader(csvfile)
-    i = int(0)
     for row in reader:
         #storing the values in the Score and noRows columns in two seperate lists
         listScoreIJK.append(row['Score'])
         listSizeIJK.append(row['Param: noRows'])
-        i=i+1
     #converting the lists to arrays so can plot easily
     arrScoreIJK = np.asarray(listScoreIJK)
     arrSizeIJK = np.asarray(listSizeIJK)
@@ -42,12 +40,10 @@ with open('master/normData/testIJKNorm') as csvfile:
 with open('master/normData/testIKJNorm') as csvfile:
     #reading in the testIKJ csv file
     reader = csv.DictReader(csvfile)
-    i = int(0)
     for row in reader:
         #storing the values in the Score and noRows columns in two seperate lists
         listScoreIKJ.append(row['Score'])
         listSizeIKJ.append(row['Param: noRows'])
-        i=i+1
         #converting the lists to arrays so can plot easily
     arrScoreIKJ = np.asarray(listScoreIKJ)
     arrSizeIKJ = np.asarray(listSizeIKJ)
