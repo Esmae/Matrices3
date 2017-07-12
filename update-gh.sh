@@ -4,9 +4,10 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
 #moving scripts to be run into home
   cp -R test* $HOME
   cp -R time* $HOME
-  cp -R CompPlot* $HOME
   cp -R refBench $HOME
   cp -R normFromRef.py $HOME
+  cp -R plotScript.py $HOME
+  
  
 
   cd $HOME
