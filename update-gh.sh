@@ -34,7 +34,10 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   chmod +x timePlot100.py
   chmod +x timePlot500.py
   #calls the python script that creates the 'with time' plot
+  echo -e "calling timePlot50"
   python timePlot50.py
+  echo -e "calling norm.py"
+  python normFromRef.py
   python timePlot100.py
   python timePlot500.py
   cp -R TimePlot50.png $HOME
