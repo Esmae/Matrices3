@@ -1,0 +1,9 @@
+Benchmark,Mode,Threads,Samples,Score,Score Error (99.9%),Unit,Param: noRows
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0391463219774,0.000379790435558,ops/s,60
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0363991329769,0.00036806009579,ops/s,62
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0330448703724,0.000390680020604,ops/s,64
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0306763673577,0.000546922268799,ops/s,66
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0262910230863,0.00022175832313,ops/s,68
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0243062698006,0.000224836964104,ops/s,70
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0226116767807,0.000192720039496,ops/s,72
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,0.0210927625094,0.00016628460418,ops/s,74
