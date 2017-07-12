@@ -25,8 +25,8 @@ python plotScript.py
   today=$(date +%Y-%m-%d_%H-%M)
   mv testIJK testIJK."$today"
   mv testIKJ testIKJ."$today"
-  mv $HOME/normData/testIJKNorm $HOME/normData/testIJKNorm."$today"
-  mv $HOME/normData/testIKJNorm $HOME/normData/testIKJNorm."$today"
+  mv $HOME/master/normData/testIJKNorm $HOME/normData/testIJKNorm."$today"
+  mv $HOME/master/normData/testIKJNorm $HOME/normData/testIKJNorm."$today"
   
   
 #putting the files in local repo
