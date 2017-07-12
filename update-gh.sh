@@ -1,4 +1,7 @@
 if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
+echo "first"
+pwd
+  ls -l
   echo -e "Starting to update Matrix 3 master\n"
 #moving files created in build into home
   cp -R test* $HOME
