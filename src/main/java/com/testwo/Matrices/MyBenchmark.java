@@ -36,6 +36,16 @@ public class MyBenchmark {
 			matrix2 = new Matrix(noRows, noRows);
 		}
 	}
+	//the setup for the reference benchmarking method
+	@State(Scope.Thread)
+	public static class myRefState {
+		Reference myRef;
+		
+		@Setup(Level.Trial)
+		public void doSetup() {
+			myRef = new Reference();
+		}
+	}
 
 	// Times the matrix multiplication for IKJ (i.e. the quicker one)
 	@Benchmark
@@ -53,6 +63,16 @@ public class MyBenchmark {
 	@Measurement(iterations = 20, time = 100, timeUnit = TimeUnit.MILLISECONDS)
 	public Matrix testMultIJK(myState theState) throws MatrixMultiplicationInvalid {
 		return theState.matrix1.tryMatMultIJK(theState.matrix2);
+	}
+
+	// benchmarks the reference method so different runs, run on different VMs
+	// can be compared
+	@Benchmark
+	@BenchmarkMode(Mode.Throughput) // Throughput is the default
+	@Warmup(iterations = 5, time = 100, timeUnit = TimeUnit.MILLISECONDS)
+	@Measurement(iterations = 20, time = 100, timeUnit = TimeUnit.MILLISECONDS)
+	public double testRefSum(myRefState theRefState) {
+		return theRefState.myRef.addNum();
 	}
 
 }
