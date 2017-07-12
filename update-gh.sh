@@ -13,8 +13,10 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   #cloning the relavant repo
   git clone --quiet --branch=master https://${TOKEN}@github.com/Esmae/Matrices3.git  master> /dev/null
   
-  chmod +x normFromRef.py
-  python normFromRef.py
+  #don't really want to do this
+  echo -e "calling python script from clone"
+  chmod +x master/normFromRef.py
+  python master/normFromRef.py
   
 
 #attaching the time and date to the data files
