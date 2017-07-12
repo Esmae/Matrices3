@@ -9,3 +9,4 @@
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,814.663784,7.940732,"ops/s",100
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,831.094177,8.190617,"ops/s",100
 "com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,852.142829,5.291393,"ops/s",100
+"com.testwo.Matrices.MyBenchmark.testMultIKJ","thrpt",1,200,794.034267,13.281455,"ops/s",100
