@@ -1,2 +1,2 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
-"com.testwo.Matrices.MyBenchmark.testRefSum","thrpt",1,200,91583.803082,394.383195,"ops/s"
+"com.testwo.Matrices.MyBenchmark.testRefSum","thrpt",1,200,91211.790556,483.794634,"ops/s"
