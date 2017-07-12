@@ -56,7 +56,7 @@ else:
     for i in range(0,10):
         listTenScore.append(listScore[listLen-10+i])
     arrTenScore = np.asarray(listTenScore)
-    arrTenCommit = np.asarray([1,2,3,4,5,6,7,8,9,10])
+    arrTenCommit = np.asarray([0,1,2,3,4,5,6,7,8,9])
     mplot.plot(arrTenCommit,arrTenScore,'k')
     #labeling the graph
     mplot.xlabel('Relative commit number (highest is most recent)')
