@@ -18,7 +18,7 @@ listSizeIJK = []
 listSizeIKJ = []
 
 
-with open('testIJK') as csvfile:
+with open('master/normData/testIJKNorm') as csvfile:
     #reading in the testIJK csv file
     reader = csv.DictReader(csvfile)
     i = int(0)
@@ -39,7 +39,7 @@ with open('testIJK') as csvfile:
     #plotting the graph
     mplot.plot(arrLnSizeIJK,arrLnScoreIJK,'k-',label='IJK')
     
-with open('testIKJ') as csvfile:
+with open('master/normData/testIKJNorm') as csvfile:
     #reading in the testIKJ csv file
     reader = csv.DictReader(csvfile)
     i = int(0)
