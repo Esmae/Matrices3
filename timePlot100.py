@@ -10,7 +10,7 @@ listCommit = []
 
 #opening the file which holds the data with time
 f = open("master/dataWithTime100","a")
-with open("time100") as g:
+with open("master/normData/time100Norm") as g:
     i = int(1)
     for line in g:
         #skipping writing the first line as this contains the header
