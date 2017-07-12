@@ -1,8 +1,5 @@
 if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
-echo "first"
-pwd
-  ls -l
-  echo -e "Starting to update Matrix 3 master\n"
+ echo -e "Starting to update Matrix 3 master\n"
 #moving files created in build into home
 #moving scripts to be run into home
   cp -R test* $HOME
@@ -20,17 +17,22 @@ pwd
   
 #normalising the benchmarking data just collected
 python normFromRef.py
+#python script produces a graph of the results
+python plotScript.py
 
 #attaching the time and date to the data files
   today=$(date +%Y-%m-%d_%H-%M)
   mv testIJK testIJK."$today"
   mv testIKJ testIKJ."$today"
+  mv $HOME/normData/testIJKNorm $HOME/normData/testIJKNorm."$today"
+  mv $HOME/normData/testIKJNorm $HOME/normData/testIKJNorm."$today"
+  
   
 #putting the files in local repo
   cp -Rf $HOME/test* master/data
   cp -Rf $HOME/CompPlot* master/figures
   cp -Rf $HOME/refBench master
-
+  
 
   
   #need to change the python script if change the name of the folder the clone is going into (currently it's called master)
