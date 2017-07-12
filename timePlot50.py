@@ -49,7 +49,7 @@ mplot.savefig("TimePlot50.png")
 #plotting a figure with only the most recent 10 results in
 listLen = len(listScore)
 if listLen <= 10:
-    mplot.savefig("TimePLotTen50.png")
+    mplot.savefig("TimePlotTen50.png")
 else:
     listTenScore = []
     mplot.clf()
