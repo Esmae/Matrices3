@@ -39,6 +39,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   echo -e "calling timePlot50"
   python timePlot50.py
   echo -e "calling norm.py"
+  chmod +x normFromRef.py
   python normFromRef.py
   python timePlot100.py
   python timePlot500.py
