@@ -12,6 +12,10 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   git config --global user.name "Travis"
   #cloning the relavant repo
   git clone --quiet --branch=master https://${TOKEN}@github.com/Esmae/Matrices3.git  master> /dev/null
+  
+  chmod +x normFromRef.py
+  python normFromRef.py
+  
 
 #attaching the time and date to the data files
   today=$(date +%Y-%m-%d_%H-%M)
