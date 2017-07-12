@@ -37,7 +37,7 @@ for row in reader:
         row[4] = str(float(row[4])/float(normalise))
         #normalising the error associated with the score
         row[5] = str(float(row[5])/float(normalise))
-        writer.writerow(row)
+    writer.writerow(row)
     i = i + 1
 
 #closing the files so they are updated 
