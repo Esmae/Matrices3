@@ -40,6 +40,6 @@ for row in reader:
         writer.writerow(row)
     i = i + 1
 
-#closing the files so they are updated
+#closing the files so they are updated 
 noNorm.close()    
 norm.close()
