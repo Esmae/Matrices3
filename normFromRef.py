@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Normalising the benchmarking data with respect to the reference benchmark run
+
+
 """
 
 import csv
@@ -21,23 +23,29 @@ for row in reader:
         
 ref.close()
         
+fileList = ["testIJK","testIKJ","time50","time100", "time500"]
+fileListNorm = ["master/normData/testIJKNorm","master/normData/testIKJNorm","master/normData/time50Norm","master/normData/time100Norm","master/normData/time500Norm"]
+for i in range(0,len(fileList)):
+    noNorm = open(fileList[i], "rb")
+    reader = csv.reader(noNorm)
+    norm = open(fileListNorm[i], "wb")
+    writer = csv.writer(norm)
 
-noNorm = open("testIJK", "rb")
-reader = csv.reader(noNorm)
-norm = open("master/normData/testIJKNorm", "wb")
-writer = csv.writer(norm)
+
+    j = 0
+    for row in reader:
+        if j != 0:
+            #normalising the score
+            row[4] = str(float(row[4])/float(normalise))
+            #normalising the error associated with the score
+            row[5] = str(float(row[5])/float(normalise))
+        writer.writerow(row)
+        j = j + 1
+            
+    #closing the files so they are updated
+    noNorm.close()    
+    norm.close()
 
 
-i = 0
-for row in reader:
-    if i != 0:
-        #normalising the score
-        row[4] = str(float(row[4])/float(normalise))
-        #normalising the error associated with the score
-        row[5] = str(float(row[5])/float(normalise))
-    writer.writerow(row)
-    i = i + 1
 
-#closing the files so they are updated 
-noNorm.close()    
-norm.close()
+
