@@ -4,6 +4,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
   cp -R test* $HOME
   cp -R time* $HOME
   cp -R CompPlot* $HOME
+  cp -R refBench $HOME
  
 
   cd $HOME
@@ -20,6 +21,7 @@ if [ "$TRAVIS_COMMIT_MESSAGE" != "Travis build pushed to Matrix3 master" ]; then
 #putting the files in local repo
   cp -Rf $HOME/test* master/data
   cp -Rf $HOME/CompPlot* master/figures
+  cp -Rf $HOME/refBench master
 
 
   
