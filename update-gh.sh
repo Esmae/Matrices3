@@ -52,7 +52,7 @@ python plotScript.py
   
   cd master
  #adding the new files and changing files so they are ready to commit 
-  git add -f .
+  git add -f --ignore-removal .
 #commiting the added changes
   git commit -m "Travis build pushed to Matrix3 master"
 #pushes the changes the github on the master branch of Matrices3
