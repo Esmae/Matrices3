@@ -8,3 +8,4 @@ com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,9.16016013454e-05,1.1852
 com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,8.69850050474e-05,2.17410297887e-06,ops/s,500
 com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,9.44734843167e-05,8.10836296562e-07,ops/s,500
 com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,9.51544782394e-05,7.38436076629e-07,ops/s,500
+com.testwo.Matrices.MyBenchmark.testMultIKJ,thrpt,1,100,9.43198149513e-05,7.64401947651e-07,ops/s,500
