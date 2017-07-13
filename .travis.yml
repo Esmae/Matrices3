@@ -4,8 +4,8 @@ sudo: required
 #building, running the JUnit tests and the benchmarks
 script: 
 - mvn clean install
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -i 10 -p noRows=63.5,64,64.5,65,65.5,66,66.5,67,67.5,68,68.5,69,69.5,70 -rf csv -rff testIJK
-- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=63.5,64,64.5,65,65.5,66,66.5,67,67.5,68,68.5,69,69.5,70 -rf csv -rff testIKJ
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIJK -i 10 -p noRows=65.4,65.6,65.8,66.0,66.2,66.4,66.6,66.8,67,67.2,67.4 -rf csv -rff testIJK
+- java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=65.4,65.6,65.8,66.0,66.2,66.4,66.6,66.8,67,67.2,67.4 -rf csv -rff testIKJ
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=50 -rf csv -rff time50
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=100 -rf csv -rff time100
 - java -jar target/Matrices-0.0.1-SNAPSHOT.jar com.testwo.Matrices.MyBenchmark.testMultIKJ -i 10 -p noRows=500 -rf csv -rff time500
