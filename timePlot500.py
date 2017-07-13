@@ -40,7 +40,7 @@ arrScore = arrScore.astype(np.float)
 mplot.plot(arrCommit,arrScore,'k')
 #labeling the graph
 mplot.xlabel('Relative commit number (highest is most recent)')
-mplot.ylabel('Throughput Score/ op/s')
+mplot.ylabel('Relative Throughput Score/ op/s')
 mplot.title('Score over time, noRows=500')
 
 #saving the plot as a png file
@@ -60,7 +60,7 @@ else:
     mplot.plot(arrTenCommit,arrTenScore,'k')
     #labeling the graph
     mplot.xlabel('Relative commit number (highest is most recent)')
-    mplot.ylabel('Throughput Score/ op/s')
+    mplot.ylabel('Relative Throughput Score/ op/s')
     mplot.title('Score over last 10, noRows=500')
     #saving the plot as a png file
     mplot.savefig("TimePlotTen500.png")
