@@ -19,8 +19,8 @@ public class TestMatrix {
 		//Code executed before the first test method
 		// calculating the actual matrices
 		// Matrices must be initialised here so they are only created once and therefore are the matrices expected(hopefully)
-		actualMat1 = new Matrix(3,3);
-		actualMat2 = new Matrix(3,3);
+		actualMat1 = new Matrix(3,3,true);
+		actualMat2 = new Matrix(3,3,true);
 	}
 
 	

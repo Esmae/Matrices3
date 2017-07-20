@@ -32,8 +32,8 @@ public class MyBenchmark {
 
 		@Setup(Level.Trial)
 		public void doSetup() {
-			matrix1 = new Matrix(noRows, noRows);
-			matrix2 = new Matrix(noRows, noRows);
+			matrix1 = new Matrix(noRows, noRows,true);
+			matrix2 = new Matrix(noRows, noRows, true);
 		}
 	}
 	//the setup for the reference benchmarking method
