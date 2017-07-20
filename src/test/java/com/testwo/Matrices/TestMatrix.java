@@ -14,6 +14,11 @@ public class TestMatrix {
 	private static Matrix actualMat1;
 	private static Matrix actualMat2;
 	
+	/**
+	 * Code executed before the first test method
+	 *	calculating the actual matrices
+	 * Matrices must be initialised here so they are only created once and therefore are the matrices expected(hopefully)
+	 */
 	@BeforeClass
 	public static void setUpClass(){
 		//Code executed before the first test method
@@ -37,7 +42,7 @@ public class TestMatrix {
 	 * @throws MatrixMultiplicationInvalid
 	 */
 	@Test
-	public void testTryMatMultIJK() throws MatrixMultiplicationInvalid {
+	public void testTryMatMultIJK() {
 		//calculating the matrix from Matrix class
 		Matrix actualMultMatIJK = actualMat1.tryMatMultIJK(actualMat2);
 
@@ -69,7 +74,7 @@ public class TestMatrix {
 	 * @throws MatrixMultiplicationInvalid
 	 */
 	@Test
-	public void testTryMatMultIKJ() throws MatrixMultiplicationInvalid {
+	public void testTryMatMultIKJ(){
 		// calculating the actual matrices from Matrix class
 		Matrix actualMultMatIKJ = actualMat1.tryMatMultIKJ(actualMat2);
 

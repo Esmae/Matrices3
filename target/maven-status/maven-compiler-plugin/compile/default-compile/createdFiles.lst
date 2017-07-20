@@ -3,7 +3,6 @@ META-INF/CompilerHints
 com/testwo/Matrices/generated/MyBenchmark_myState_jmhType_B1.class
 com/testwo/Matrices/generated/MyBenchmark_myState_jmhType.class
 com/testwo/Matrices/generated/MyBenchmark_testRefSum_jmhTest.class
-com/testwo/Matrices/MatrixMultiplicationInvalid.class
 com/testwo/Matrices/generated/MyBenchmark_jmhType.java
 com/testwo/Matrices/generated/MyBenchmark_myRefState_jmhType_B1.class
 com/testwo/Matrices/generated/MyBenchmark_jmhType_B2.java
@@ -34,6 +33,5 @@ com/testwo/Matrices/MyBenchmark$myRefState.class
 com/testwo/Matrices/generated/MyBenchmark_myRefState_jmhType.java
 com/testwo/Matrices/generated/MyBenchmark_jmhType_B1.class
 com/testwo/Matrices/generated/MyBenchmark_jmhType.class
-com/testwo/Matrices/Testing.class
 com/testwo/Matrices/generated/MyBenchmark_jmhType_B3.class
 com/testwo/Matrices/generated/MyBenchmark_testMultIKJ_jmhTest.java

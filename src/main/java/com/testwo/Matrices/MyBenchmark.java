@@ -1,5 +1,5 @@
 package com.testwo.Matrices;
-/*
+/**
  * benchmarks the multiplication of 2 square matrices
  */
 
@@ -52,7 +52,7 @@ public class MyBenchmark {
 	@BenchmarkMode(Mode.Throughput) // Throughput is the default
 	@Warmup(iterations = 5, time = 100, timeUnit = TimeUnit.MILLISECONDS)
 	@Measurement(iterations = 20, time = 100, timeUnit = TimeUnit.MILLISECONDS)
-	public Matrix testMultIKJ(myState theState) throws MatrixMultiplicationInvalid {
+	public Matrix testMultIKJ(myState theState){
 		return theState.matrix1.tryMatMultIKJ(theState.matrix2);
 	}
 
@@ -61,7 +61,7 @@ public class MyBenchmark {
 	@BenchmarkMode(Mode.Throughput) // Throughput is the default
 	@Warmup(iterations = 5, time = 100, timeUnit = TimeUnit.MILLISECONDS)
 	@Measurement(iterations = 20, time = 100, timeUnit = TimeUnit.MILLISECONDS)
-	public Matrix testMultIJK(myState theState) throws MatrixMultiplicationInvalid {
+	public Matrix testMultIJK(myState theState) {
 		return theState.matrix1.tryMatMultIJK(theState.matrix2);
 	}
 

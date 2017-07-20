@@ -54,6 +54,7 @@ public class Matrix {
 	/**
 	 * returns the matrix as a string
 	 */
+	@Override
 	public String toString() {
 		StringBuilder strMatrix = new StringBuilder();
 		for (int i = 0; i < numRows; i++) {
@@ -150,12 +151,12 @@ public class Matrix {
 	 * @param otherMat:
 	 * @return
 	 */
-	public Matrix tryMatMultIKJ(Matrix otherMat) throws MatrixMultiplicationInvalid {
+	public Matrix tryMatMultIKJ(Matrix otherMat){
 		if (this.numCols == otherMat.numRows) {// Can do matrix multiplication
 			return matMultIKJ(otherMat);
 
 		} else {
-			throw new MatrixMultiplicationInvalid("These matrices have incompatible rows/columns to be multiplied");
+			throw new IllegalArgumentException("These matrices have incompatible rows/columns to be multiplied");
 		}
 	}
 
